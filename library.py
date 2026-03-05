@@ -1,19 +1,19 @@
 from random import choice 
 from turtle import title
 
-class Book
-    def init(self, title, author, book_id):
+class Book:
+    def __init__(self, title, author, book_id):
         self.title = title
         self.author = author
         self.book_id = book_id
         self.borrowed = False
 
-    def str(self):
+    def __str__(self):
         status = "Borrowed" if self.borrowed else "Available"
         return f"Title: {self.title}, Author: {self.author}, ID: {self.book_id}, Status: {status}"
 
 class Member:
-    def init(self, name, member_id):
+    def __init__(self, name, member_id):
         self.name = name
         self.member_id = member_id
         self.borrowed_books = []
@@ -35,7 +35,7 @@ class Member:
             print("you did not borrow this book.")
 
 class Library:
-    def init(self):
+    def __init__(self):
         self.books = []
         self.members = []
 
