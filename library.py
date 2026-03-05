@@ -1,7 +1,7 @@
 from random import choice 
- from turtle import title
+from turtle import title
 
-class Boo
+class Book
     def init(self, title, author, book_id):
         self.title = title
         self.author = author
